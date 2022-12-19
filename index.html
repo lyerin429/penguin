@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #item{
+            position: relative;
+            width: 640px;
+            height: auto;
+            margin: 5px;
+            padding: 15px 20px;
+            float: left;
+        }
+        button {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .over{
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+        }
+        .detail{
+            text-align: justify;
+            line-height: 1.8em;
+            display: none;
+        }
+    </style>
+    <title>상세내용보기</title>
+</head>
+<body>
+    <div id="item">
+        <img src="img/penguin-1.png" alt="펭귄1">
+        <button id="open1" class="over" onclick="showDetail1();">상세 설명보기</button>
+        <div id="sangse1" class="detail">
+            <h4>제목</h4>
+            <p>달느수랭은 잉므에, 엄에으은으로 일믄우뢔뎐핰다 버느바해앙노. 다낰깡횬쉬가 멯란수달을 조비라 허대줠으로 말조졀은, 습에으. 장여잉경왈다 환쇼슨리 미네고헤의 시단닌고 으슨과 서곤잦아는 단그도 스욜다 척존늴느다 딕란아 컬미래. 등호싱차 러인 닌스와까지 운매, 옸닐이 싱펄인은 톻피언오다, 으사 텅캬곰으라. 약사한 논하여 밀싯니를 하도 해브신, 영보자미, 요있궁 감운조도 니젯지만 짐고를 져에의간이라도. 커긴드란 욱흐가새는 와우가이의 앗너져와알아 걸짆이요 우두라. 리카븜사 논잕던 잤이난뎡히좀하훠가 굼리아조로 디사즤다 히네메가 베낸딘림등쌩비 아둬가 안언, 븐삭안. 윤느주게 고기욜뼙하를 탄어 노느눕뵤빽제 능증삔겡거나 더납님에 다보제지지 오낸송니농을 고뎊렌 아데구에서.</p>
+            <button id="close1" onclick="hideDetail1();">상세 설명닫기</button>
+        </div>
+    </div>
+    <div id="item">
+        <img src="img/penguin-3.png" alt="펭귄3">
+        <button id="open2" class="over" onclick="showDetail2();">상세 설명보기</button>
+        <div id="sangse2" class="detail">
+            <h4>제목</h4>
+            <p>달느수랭은 잉므에, 엄에으은으로 일믄우뢔뎐핰다 버느바해앙노. 다낰깡횬쉬가 멯란수달을 조비라 허대줠으로 말조졀은, 습에으. 장여잉경왈다 환쇼슨리 미네고헤의 시단닌고 으슨과 서곤잦아는 단그도 스욜다 척존늴느다 딕란아 컬미래. 등호싱차 러인 닌스와까지 운매, 옸닐이 싱펄인은 톻피언오다, 으사 텅캬곰으라. 약사한 논하여 밀싯니를 하도 해브신, 영보자미, 요있궁 감운조도 니젯지만 짐고를 져에의간이라도. 커긴드란 욱흐가새는 와우가이의 앗너져와알아 걸짆이요 우두라. 리카븜사 논잕던 잤이난뎡히좀하훠가 굼리아조로 디사즤다 히네메가 베낸딘림등쌩비 아둬가 안언, 븐삭안. 윤느주게 고기욜뼙하를 탄어 노느눕뵤빽제 능증삔겡거나 더납님에 다보제지지 오낸송니농을 고뎊렌 아데구에서.</p>
+            <button id="close2" onclick="hideDetail2();">상세 설명닫기</button>
+        </div>
+    </div>
+    <!--자바스크립트 삽입-->
+    <script>
+        function showDetail1(){
+            document.querySelector('#sangse1').style.display='block';
+            document.querySelector('#open1').style.display='none';
+        }
+        function hideDetail1(){
+            document.querySelector('#sangse1').style.display='none';
+            document.querySelector('#open1').style.display='block';
+        }
+        function showDetail2(){
+            document.querySelector('#sangse2').style.display='block';
+            document.querySelector('#open2').style.display='none';
+        }
+        function hideDetail2(){
+            document.querySelector('#sangse2').style.display='none';
+            document.querySelector('#open2').style.display='block';
+        }
+    </script>
+</body>
+</html>
